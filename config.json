@@ -1,0 +1,9 @@
+{
+    "TOKEN": "MTMzNTE5MjYyMTA0NzM1MzQwNA.GWIuQT.Ns4qQNEUrVMfgjDn7TLyiigVthquJoP1C345ls",
+    "MONGO_DB": "mongodb+srv://ashish:ashish@sitrox.23cf4ve.mongodb.net/?retryWrites=true&w=majority",
+    "cooldown": true,
+    "owner": ["908881051181535293"],
+    "admin": ["908881051181535293"],
+    "np": ["908881051181535293"],
+    "invite": "https://discord.com/oauth2/authorize?client_id=1335192621047353404&permissions=8&integration_type=0&scope=bot+applications.commands"
+}
