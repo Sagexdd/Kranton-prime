@@ -31,7 +31,7 @@ module.exports = {
         });
 
         const emb = new MessageEmbed()
-            .setDescription(`<:tick:1317818894546898985> | All channels are now visible to @everyone role`)
+            .setDescription(`<:tick_icons:1345041197483298856> | All channels are now visible to @everyone role`)
             .setColor(client.color);
         return message.channel.send({ embeds: [emb] });
     }
