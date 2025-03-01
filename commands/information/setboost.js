@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Administration\` perms to run this command.`
+                            `<:icon_cross:1345041135156072541> | You must have \`Administration\` perms to run this command.`
                         )
                 ]
             })
@@ -30,7 +30,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You didn't provided a valid channel.`
+                            `<:icon_cross:1345041135156072541> | You didn't provided a valid channel.`
                         )
                 ]
             })
@@ -45,7 +45,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I didn't have permissions to send messages in <#${channel.id}>.`
+                            `<:icon_cross:1345041135156072541> | I didn't have permissions to send messages in <#${channel.id}>.`
                         )
                 ]
             })
@@ -64,8 +64,8 @@ module.exports = {
                     .setColor(client.color)
                     .setDescription(
                         disable
-                            ? `<:tick:1317818894546898985> | I'll not send messages when when someone boosts the server.`
-                            : `<:tick:1317818894546898985> | I'll now send messages to <#${channel.id}> when someone boosts the server.`
+                            ? `<:tick_icons:1345041197483298856> | I'll not send messages when when someone boosts the server.`
+                            : `<:tick_icons:1345041197483298856> | I'll now send messages to <#${channel.id}> when someone boosts the server.`
                     )
             ]
         })
