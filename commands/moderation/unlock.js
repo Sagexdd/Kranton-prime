@@ -17,7 +17,7 @@ module.exports = {
             const error = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300>You must have \`Manage Channels\` permission to use this command.`
+                    `<:icon_cross:1345041135156072541> You must have \`Manage Channels\` permission to use this command.`
                 )
             return message.channel.send({ embeds: [error] })
         }
@@ -32,7 +32,7 @@ module.exports = {
             })
             const emb = new MessageEmbed()
                 .setDescription(
-                    `<:tick:1317818894546898985> ${channel} has been unlocked for @everyone role`
+                    `<:tick_icons:1345041197483298856> ${channel} has been unlocked for @everyone role`
                 )
                 .setColor(client.color)
             return message.channel.send({ embeds: [emb] })
