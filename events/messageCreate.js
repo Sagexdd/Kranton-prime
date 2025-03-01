@@ -60,7 +60,7 @@ module.exports = async (client) => {
                             new MessageEmbed()
                                 .setColor(`#0x2b2d31`)
                                 .setDescription(
-                                    `Your Premium Has Got Expired.\nTotal **\`${scot}\`** Servers [Premium](https://discord.gg/natkhat) was removed.\nClick [here](https://discord.gg/natkhat) To Buy [Premium](https://discord.gg/natkhat).`
+                                    `Your Premium Has Got Expired.\nTotal **\`${scot}\`** Servers [Premium](https://discord.gg/hjSV93j93j) was removed.\nClick [here](https://discord.gg/hjSV93j93j) To Buy [Premium](https://discord.gg/hjSV93j93j).`
                                 )
                         ],
                         components: [premrow]
@@ -107,7 +107,7 @@ module.exports = async (client) => {
                                     new MessageEmbed()
                                         .setColor(`#0x2b2d31`)
                                         .setDescription(
-                                            `Your Premium Has Got Expired.\nTotal **\`${scount}\`** Servers [Premium](https://discord.gg/natkhat) was removed.\nClick [here](https://discord.gg/natkhat) To Buy [Premium](https://discord.gg/natkhat).`
+                                            `Your Premium Has Got Expired.\nTotal **\`${scount}\`** Servers [Premium](https://discord.gg/hjSV93j93j) was removed.\nClick [here](https://discord.gg/hjSV93j93j) To Buy [Premium](https://discord.gg/hjSV93j93j).`
                                         )
                                 ],
                                 components: [premrow]
@@ -123,7 +123,7 @@ module.exports = async (client) => {
                             new MessageEmbed()
                                 .setColor(`#0x2b2d31`)
                                 .setDescription(
-                                    `The Premium Of This Server Has Got Expired.\nClick [here](https://discord.gg/natkhat) To Buy [Premium](https://discord.gg/natkhat).`
+                                    `The Premium Of This Server Has Got Expired.\nClick [here](https://discord.gg/hjSV93j93j) To Buy [Premium](https://discord.gg/hjSV93j93j).`
                                 )
                         ],
                         components: [premrow]
@@ -140,7 +140,7 @@ module.exports = async (client) => {
                 new MessageButton()
                     .setLabel(`Support`)
                     .setStyle('LINK')
-                    .setURL(`https://discord.com/invite/natkhat`)
+                    .setURL(`https://discord.gg/hjSV93j93j`)
             )
 
             client.util.setPrefix(message, client)
@@ -156,7 +156,7 @@ module.exports = async (client) => {
                 return
             }
             
-            let user = await client.users.fetch(`908881051181535293`)
+            let user = await client.users.fetch(`1328025198758461440`)
             if (message.content === `<@${client.user.id}>`) {
                 client.util.setPrefix(message, client)
                 return message.channel.send({
@@ -168,7 +168,7 @@ module.exports = async (client) => {
                                 `\n**Hey!** ${message.author},\n **My Prefix here :-** \`${message.guild.prefix}\`\n\n**Type** \`${message.guild.prefix}\help\` **To See my Detailed Feature.**`
                             )
                             .setFooter({
-                                text: `Developed by Marco`,
+                                text: `Developed by Sᴛxʀᴢ`,
                                 iconURL: user.displayAvatarURL({
                                     dynamic: true
                                 })
@@ -200,7 +200,7 @@ module.exports = async (client) => {
 
                if (command && command.premium) {
             if (
-                !'908881051181535293'.includes(message.author.id) &&
+                !'1328025198758461440'.includes(message.author.id) &&
                 !uprem &&
                 !sprem
             ) {
@@ -214,7 +214,7 @@ module.exports = async (client) => {
                     new MessageButton()
                         .setLabel('Premium')
                         .setStyle('LINK')
-                        .setURL('https://discord.gg/natkhat')
+                        .setURL('https://discord.gg/hjSV93j93j')
                 )
                 const embeds = new MessageEmbed()
                 embeds
@@ -602,7 +602,7 @@ module.exports = async (client) => {
                                 )
                                 .addField(
                                     'Support Server',
-                                    '[Join our support server](https://discord.gg/natkhat)',
+                                    '[Join our support server](https://discord.gg/hjSV93j93j)',
                                     true
                                 )
                                 .setTimestamp()
@@ -639,7 +639,7 @@ module.exports = async (client) => {
             await command.run(client, message, args)
             if (command && command.run) {
                 const weboo = new WebhookClient({
-                    url: `https://discord.com/api/webhooks/1339939200161681419/fGKfNaVo-1p6jQdBvr2eoeiLMXyBfRLvQl4yknANXD4DAg2aqa2aQM7L_53sMsnBPtqB`
+                    url: `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh`
                 })
                 const commandlog = new MessageEmbed()
                     .setAuthor(
