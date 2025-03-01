@@ -13,8 +13,8 @@ const booster = {
     TIER_2: 'Level: 2',
     TIER_3: 'Level: 3'
 }
-const disabled = '<:cross:1317733546261217300>'
-const enabled = '<a:tk:1290911171389423717>'
+const disabled = '<:icon_cross:1345041135156072541>'
+const enabled = '<:tick_icons:1345041197483298856>'
 
 module.exports = {
     name: 'serverinfo',
@@ -60,7 +60,7 @@ module.exports = {
                         .addFields([
                             {
                                 name: '__About__',
-                                value: `**Name**: ${guild.name} \n **ID**: ${guild.id} \n **Owner <a:oz:1291416157114339482>:** <@!${guild.ownerId}> (${guild.ownerId})\n**Created at:** <t:${parseInt(createdTimestamp / 1000)}:R>\n**Members: **${guild.memberCount}\n**Banned Members: **${bans}`
+                                value: `**Name**: ${guild.name} \n **ID**: ${guild.id} \n **Owner <a:cx_crown:1343921506345816094>:** <@!${guild.ownerId}> (${guild.ownerId})\n**Created at:** <t:${parseInt(createdTimestamp / 1000)}:R>\n**Members: **${guild.memberCount}\n**Banned Members: **${bans}`
                             },
                             {
                                 name: '__Server Information__',
@@ -68,7 +68,7 @@ module.exports = {
                             },
                             {
                                 name: '__Channels__',
-                                value: `**Total: ** ${channels.size}\n**Channels: ** <:channel:1318027209318993992> ${channels.filter((channel) => channel.type === 'GUILD_TEXT').size} | <:vc:1318027206420594739> ${channels.filter((channel) => channel.type === 'GUILD_VOICE').size}`
+                                value: `**Total: ** ${channels.size}\n**Channels: ** <:icons_menu:1343940985637568656>  ${channels.filter((channel) => channel.type === 'GUILD_TEXT').size} | <:voice:1345245345562497155> ${channels.filter((channel) => channel.type === 'GUILD_VOICE').size}`
                             },
                             {
                                 name: '__Emoji Info__',
@@ -76,7 +76,7 @@ module.exports = {
                             },
                             {
                                 name: '__Boost Status__',
-                                value: `${booster[guild.premiumTier]} [<a:boost:1317891977316007996> ${guild.premiumSubscriptionCount || '0'} Boosts]`
+                                value: `${booster[guild.premiumTier]} [<a:boost2:1345328435391758397>  ${guild.premiumSubscriptionCount || '0'} Boosts]`
                             },
                             {
                                 name: `__Server Roles__ [${roles.length}]`,
