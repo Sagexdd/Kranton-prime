@@ -7,13 +7,13 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<:icon_cross:1345041135156072541> | Your Server Doesn't Meet My 5 Member Criteria`
                         )
                 ]
             })
@@ -29,7 +29,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
+                            `<:icon_cross:1345041135156072541> | Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.`
                         )
                 ]
             })
@@ -44,7 +44,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | Only the server owner or extra owner with a higher role than mine can execute this command.
+                    `<:icon_cross:1345041135156072541> | Only the server owner or extra owner with a higher role than mine can execute this command.
 
 
 
@@ -67,16 +67,16 @@ module.exports = {
             .addFields([
                 {
                     name: `__**Usage**__`,
-                    value: `<:stolen_emoji:1245702815737843772> \`${message.guild.prefix}unwhitelist @user/id\`\n<:stolen_emoji:1245702815737843772> \`${message.guild.prefix}uwl @user\``
+                    value: `<:icons_pin:1345041172938358935> \`${message.guild.prefix}unwhitelist @user/id\`\n<:stolen_emoji:1245702815737843772> \`${message.guild.prefix}uwl @user\``
                 }
             ])
         const antinuke = await client.db.get(`${message.guild.id}_antinuke`)
         if (!antinuke) {
             const dissable = new MessageEmbed().setColor(client.color)
-                .setDescription(` ** ${message.guild.name} security settings <:stolen_emoji:1245605073036378183>
+                .setDescription(` ** ${message.guild.name} security settings <:icons_mod:1345041156827779184>
 Ohh NO! looks like your server doesn't enabled security
 
-Current Status : <:red:1290545303409393727><:greentick:1290545729688965232>
+Current Status : <:icon_cross:1345041135156072541><:tick_icons:1345041197483298856>
 
 To enable use antinuke enable ** `)
             message.channel.send({ embeds: [dissable] })
@@ -111,7 +111,7 @@ To enable use antinuke enable ** `)
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:cross:1317733546261217300> | <@${user.id}> is not a whitelisted member.`
+                                        `<:icon_cross:1345041135156072541> | <@${user.id}> is not a whitelisted member.`
                                     )
                             ]
                         })
@@ -128,7 +128,7 @@ To enable use antinuke enable ** `)
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:cross:1317733546261217300> | <@${user.id}> is not a whitelisted member.`
+                                                `<:icon_cross:1345041135156072541> | <@${user.id}> is not a whitelisted member.`
                                             )
                                     ]
                                 })
@@ -146,7 +146,7 @@ To enable use antinuke enable ** `)
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:tick:1317818894546898985> | Successfully removed <@${user.id}> from whitelisted user.`
+                                                `<:tick_icons:1345041197483298856> | Successfully removed <@${user.id}> from whitelisted user.`
                                             )
                                     ]
                                 })
