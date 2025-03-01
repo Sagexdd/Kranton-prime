@@ -2,7 +2,7 @@ const { MessageEmbed } = require('discord.js')
 let enable = `<:cm_off:1345295117082169354><:cm_on:1345295105309020171>`
 let disable = `<:cm_on:1345295105309020171><:cm_off:1345295117082169354>`
 let protect = `<:Icons_Guardian:1345041202755407984>`
-let hii = `<a:cx_ping:1343921964674449418> `
+let hii = `<a:x_dot:1345324448491769877> `
 const wait = require('wait')
 
 module.exports = {
