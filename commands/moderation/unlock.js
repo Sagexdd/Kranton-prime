@@ -39,7 +39,7 @@ module.exports = {
         } else {
             const embi = new MessageEmbed()
                 .setDescription(
-                    `<:cross:1317733546261217300>I don't have adequate permissions to unlock this channel.`
+                    `<:icon_cross:1345041135156072541> I don't have adequate permissions to unlock this channel.`
                 )
                 .setColor(client.color)
             return message.channel.send({ embeds: [embi] })
