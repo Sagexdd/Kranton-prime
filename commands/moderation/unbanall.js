@@ -19,7 +19,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Ban Members\` permissions to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have \`Ban Members\` permissions to use this command.`
                         )
                 ]
             })
@@ -30,7 +30,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I must have \`Ban Members\` permissions to execute this command.`
+                            `<:icon_cross:1345041135156072541> | I must have \`Ban Members\` permissions to execute this command.`
                         )
                 ]
             })
@@ -42,7 +42,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -54,7 +54,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | There is no one banned in this server.`
+                                `<:icon_cross:1345041135156072541> | There is no one banned in this server.`
                             )
                     ]
                 })
@@ -69,7 +69,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | Successfully *Unbanned* \`${i}\` users from the server.`
+                                `<:tick_icons:1345041197483298856> | Successfully *Unbanned* \`${i}\` users from the server.`
                             )
                     ]
                 })
