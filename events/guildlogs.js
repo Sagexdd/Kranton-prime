@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js')
-const join = '1339937424934965332'
-const leave = '1339937464529326154'
+const join = '1343424929269289065'
+const leave = '1343424929269289065'
 
 module.exports = async (client) => {
     client.on('guildCreate', async (guild) => {
@@ -15,11 +15,11 @@ module.exports = async (client) => {
         let own = await guild.fetchOwner()
         let links = guild.bannerURL({ dynamic: true, size: 1024 })
         if (guild.partnered && guild.verified)
-            emoji = `<:stolen_emoji:1245960821352431660><:stolen_emoji:1245961406084288523>`
+            emoji = `<a:partnerblyszczacy:1344550556022083668> <a:blackveryfi:1344551202284638281> `
         else if (guild.partnered && !guild.verified)
-            emoji = '<:stolen_emoji:1245960821352431660>'
+            emoji = '<a:partnerblyszczacy:1344550556022083668> '
         else if (!guild.partnered && guild.verified)
-            emoji = '<:stolen_emoji:1245961406084288523>'
+            emoji = '<a:blackveryfi:1344551202284638281>'
         else if (!guild.partnered && !guild.verified)
             emoji = `${client.emoji.cross}`
         const embed = new MessageEmbed()
