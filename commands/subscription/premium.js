@@ -10,22 +10,22 @@ module.exports = {
         try {
             const embed = new MessageEmbed()
                 .setColor('#0x2b2d31')
-                .setFooter(`Developed By 💞 By .rex4sure.`);
+                .setFooter(`Developed By Sᴛxʀᴢ.`);
             
             const row = new MessageActionRow().addComponents(
                 new MessageButton()
                     .setLabel('Premium')    
                     .setStyle('LINK')
-                    .setURL('https://discord.gg/hindustani')
+                    .setURL('https://discord.gg/hjSV93j93j')
             );
 
-            let link = 'https://discord.gg/hindustani';
+            let link = 'https://discord.gg/hjSV93j93j';
 
             if (!args[0]) {
                 embed.setAuthor(
                     `${client.user.username} Premium`,
                     client.user.displayAvatarURL(),
-                    'https://discord.gg/hindustani'
+                    'https://discord.gg/hjSV93j93j'
                 );
                 embed.setThumbnail(message.guild.iconURL({ dynamic: true }));
                 embed.setDescription(
@@ -214,7 +214,7 @@ module.exports = {
                     embed.setAuthor(
                         `${client.user.username} Premium`,
                         client.user.displayAvatarURL(),
-                        'https://discord.gg/hindustani'
+                        'https://discord.gg/hjSV93j93j'
                     );
                     embed.setThumbnail(message.guild.iconURL({ dynamic: true }));
                     embed.setDescription(
