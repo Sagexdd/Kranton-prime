@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('BLACK')
                         .setDescription(
-                            `<:anxCross:1317554876712222794> | You must be the **Guild Owner** or have \`Manage Messages\` permission to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must be the **Guild Owner** or have \`Manage Messages\` permission to use this command.`
                         ),
                 ],
             });
@@ -25,7 +25,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('BLACK')
                         .setDescription(
-                            `<:anxCross:1317554876712222794> | Please provide both a trigger phrase and a reply message.`
+                            `<:icon_cross:1345041135156072541> | Please provide both a trigger phrase and a reply message.`
                         ),
                 ],
             });
@@ -44,7 +44,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor('BLACK')
                         .setDescription(
-                            `<:anxCross:1317554876712222794> | An autoresponder for this trigger already exists.`
+                            `<:icon_cross:1345041135156072541> | An autoresponder for this trigger already exists.`
                         ),
                 ],
             });
@@ -58,7 +58,7 @@ module.exports = {
                 new MessageEmbed()
                     .setColor('GREEN')
                     .setDescription(
-                        `<a:tk:1304818061034917979> | Successfully set an autoresponder for the trigger \`${trigger}\` with the reply: \`${replyMessage}\`.`
+                        `<:tick_icons:1345041197483298856> | Successfully set an autoresponder for the trigger \`${trigger}\` with the reply: \`${replyMessage}\`.`
                     ),
             ],
         });
