@@ -31,7 +31,7 @@ module.exports = {
                 reason: `${message.author.tag} (${message.author.id})`
             })
             const emb = new MessageEmbed()
-                .setDescription(`<:tick:1317818894546898985> ${channel} has been locked for @everyone role`)
+                .setDescription(`<:tick_icons:1345041197483298856> ${channel} has been locked for @everyone role`)
                 .setColor(client.color)
             return message.channel.send({ embeds: [emb] })
         } else {
