@@ -7,7 +7,7 @@ module.exports = {
     category: 'info',
     premium: false,
     run: async (client, message, args) => {
-        let prefix = message.guild?.prefix || '&'; // default prefix if not set
+        let prefix = message.guild?.prefix || '$'; // default prefix if not set
 
         const query = args[0]; // Get the query (command name) from arguments
 
@@ -41,7 +41,7 @@ module.exports = {
             // Set author, thumbnail, and footer
             embed.setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-                .setFooter('Trick Is Love', 'https://cdn.discordapp.com/avatars/760143551920078861/a6f1e1989177fbb4c7f3d44498418d22.png?size=2048');
+                .setFooter('Kranton Prime Is Love', 'https://cdn.discordapp.com/attachments/1345069871351857265/1345317049446039592/8401-white-tree-pfpsgg.gif?ex=67c41ba3&is=67c2ca23&hm=daa0bab10df80e1a4e2a8a76798bd50a0980e12b98f5989339ae028b7aabe92c&');
 
             return message.channel.send({ embeds: [embed] });
         }  
@@ -131,7 +131,7 @@ module.exports = {
             new MessageButton()
                 .setLabel('Support Me')
                 .setStyle('LINK')
-                .setURL('https://discord.gg/hindustani'),
+                .setURL('https://discord.gg/hjSV93j93j'),
             new MessageButton()
                 .setCustomId('home')
                 .setLabel('Home')
@@ -150,36 +150,36 @@ module.exports = {
             })
             .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
             .setDescription(
-                `Hello ! I'm **${client.user.username}**, your all-in-one server management and security bot with powerful features.\n\n \<:reddot:1317860462028914700> **Prefix for this server** \`${prefix}\`\n<:reddot:1317860462028914700>  **Total Commands: **\`${client.commands.size}\`\n<:reddot:1317860462028914700>  **Type ${prefix}dangermode enable  to enhance security!**`)
+                `Hello ! I'm **${client.user.username}**, your all-in-one server management and security bot with powerful features.\n\n \ <a:cx_ping:1343921964674449418>  **Prefix for this server** \`${prefix}\`\n<a:cx_ping:1343921964674449418>   **Total Commands: **\`${client.commands.size}\`\n<a:cx_ping:1343921964674449418>   **Type ${prefix}dangermode enable  to enhance security!**`)
             .addField('`<> - Required | () - Optional`', '\u200B', false)
             .addField(
                     '__Modules__',
                     `
-                    <:antinuke:1317733398185508924> **AntiNuke**
-                    <:moderation:1317735997827448853> **Moderation**
-                    <:utility:1317735995222786048> **Utility**
-                    <:welcomer:1317735981360877658> **Welcomer**
-                    <:reactionroles:1317735978659741696> **Reaction Role**
-                    <:ticket:1317735976252084234> **Ticket**
-                    <:voice:1317735973542690836> **Voice**
-                    <:customrole:1317735971118387264> **Customrole**
-                    <:logging:1317735967729123348> **Logging**
-                    <:automod:1317735963761578054> **Automod**
-                    <:autoresponder:1317735961169231872> **Autorespond**
-                    <:giveway:1317735958606647349> **Giveaway**
-                    <:fun:1317735956601765921> **Fun**
+                    <a:antinuke:1281624871914311710> **AntiNuke**
+                    <a:Moderation:1345244176299724822>  **Moderation**
+                    <:Icons_utility:1343920506797031507> **Utility**
+                    <a:heart2:1343922330702712898> **Welcomer**
+                    <a:hearts:1345319482104483841> **Reaction Role**
+                    <a:X_Ticket:1345319927996747797> **Ticket**
+                    <:voice:1345245345562497155>  **Voice**
+                    <:icons_human:1343922201933385749> **Customrole**
+                    <:logging:1345246399259873370> **Logging**
+                    <:icons_martillo:1343940961562136608> **Automod**
+                    <a:gato_hacker:1345321152301629471> **Autorespond**
+                    <a:giveaway:1345321515519836202> **Giveaway**
+                    <a:832282560750813215:1345321819560869899> **Fun**
                     `,
                     false
                 )
                 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
                 .addField(
                     'Links',
-                    `[Support](https://discord.gg/hindustani) | [Invite Me](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)`,
+                    `[Support](https://discord.gg/hjSV93j93j) | [Invite Me](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)`,
                     true
                 )
                 .setFooter({
-                    text: `Developed by 💞 By .rex4sure.`,
-                    iconURL: 'https://images-ext-1.discordapp.net/external/R5FaJYZtxJKRpud5nY_i3Vg4NVAkQuANcTuLOt3hckg/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1237086498076098762/a66bb0f21cdc7c397f3ab3bc87445d98.webp?width=662&height=662'
+                    text: `Developed by Sᴛxʀᴢ.`,
+                    iconURL: 'https://cdn.discordapp.com/attachments/1345069871351857265/1345318707311935558/pixelcut-export_1.png?ex=67c41d2e&is=67c2cbae&hm=031ea1221a5d25df3020de34e1b794d66b512b429e9ccc55de28c997a1cc95f9&'
                 });
                 
 
