@@ -70,7 +70,7 @@ module.exports = {
 
             role = await message.guild.roles.create({
 
-                name: 'Jingle Ticket Manager',
+                name: 'Kranton Prime Ticket Manager',
 
                 color: '#000000', // Hex code for black color
 
@@ -86,7 +86,7 @@ module.exports = {
 
         let category = message.guild.channels.cache.find(
 
-            c => c.name === 'Jingle Tickets' && c.type === 'GUILD_CATEGORY'
+            c => c.name === 'Kranton Prime Tickets' && c.type === 'GUILD_CATEGORY'
 
         );
 
@@ -104,7 +104,7 @@ module.exports = {
 
         const ticketPanelEmbed = new MessageEmbed()
 
-            .setTitle('Jingle Ticket Panel')
+            .setTitle('Kranton Prime Ticket Panel')
 
             .setDescription('Click the button below to create a ticket.')
 
