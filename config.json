@@ -1,9 +1,9 @@
 {
-    "TOKEN": "MTMzNTE5MjYyMTA0NzM1MzQwNA.GWIuQT.Ns4qQNEUrVMfgjDn7TLyiigVthquJoP1C345ls",
+    "TOKEN": "",
     "MONGO_DB": "mongodb+srv://CodeXDev:CodeX007@codex-public.lo930xf.mongodb.net/?retryWrites=true&w=majority",
     "cooldown": true,
     "owner": ["1328025198758461440"],
     "admin": ["1328025198758461440"],
     "np": ["1328025198758461440"],
-    "invite": "https://discord.com/oauth2/authorize?client_id=1335192621047353404&permissions=8&integration_type=0&scope=bot+applications.commands"
+    "invite": "https://discord.com/oauth2/authorize?client_id=1330071725659918377&permissions=0&integration_type=0&scope=bot+applications.commands"
 }
