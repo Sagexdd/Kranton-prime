@@ -2,19 +2,19 @@ const { MessageEmbed } = require("discord.js");
 const moment = require("moment");
 
 let DISCORD_EMPLOYEE = `<:bot_colorstaff:1227278429653565470>`;
-let DISCORD_PARTNER = `<:icons_colorserverpartner:1209160626811961395>`;
-let BUGHUNTER_LEVEL_1 = `<:bughunterl1:1223265054103965716>`;
-let BUGHUNTER_LEVEL_2 = `<:bughunter2:1223265167089991802>`;
-let HYPESQUAD_EVENTS = `<:hypesquadevents:1223265276355936286>`;
-let HOUSE_BRAVERY = `<:DiscordHypesquadBravery:1223265469708894259>`;
-let HOUSE_BRILLIANCE = `<:brilliance:1223265376893141063>`;
-let HOUSE_BALANCE = `<:balance:1223265535970770965>`;
-let EARLY_SUPPORTER = `<:earlysupporter:1223265622415118337>`;
-let TEAM_USER = `<:TEAM_USER:1223265987269234830>`;
-let SYSTEM = `<:system:1227279579723464786>`;
-let VERIFIED_BOT = `<:Verified_bot:1223266180228448336>`;
-let VERIFIED_DEVELOPER = `<:VerifiedBotDeveloper:1223266297383751814>`;
-let ACTIVE_DEVELOPER = `<:Active_developers:1227279813979537501>`;
+let DISCORD_PARTNER = `<a:partnerblyszczacy:1344550556022083668>`;
+let BUGHUNTER_LEVEL_1 = `<:kr_Bug_Hunter:1343921208412078224>`;
+let BUGHUNTER_LEVEL_2 = `<:ZlotyLowcaBugow:1344550507959681054>`;
+let HYPESQUAD_EVENTS = `<:HypeSquad_Events:1345323641931431978>`;
+let HOUSE_BRAVERY = `<:hypesquad_bravery:1345356317182922783>`;
+let HOUSE_BRILLIANCE = `<:hypesquad_brilliance:1345356297872211999>`;
+let HOUSE_BALANCE = `<:hypesquad_balance:1345356330524868681>`;
+let EARLY_SUPPORTER = `<:EarlySupporterBooster:1345323988108316765>`;
+let TEAM_USER = `<:user:1344640763207614525>`;
+let SYSTEM = `<:system:1345357441084166165>`;
+let VERIFIED_BOT = `<:verified_bot:1345357407320150158>`;
+let VERIFIED_DEVELOPER = `<a:cx_developer:1343921594166284341> `;
+let ACTIVE_DEVELOPER = `<:ActiveDeveloperBadge:1345357909336391691>`;
 
 module.exports = {
     name: "userinfo",
