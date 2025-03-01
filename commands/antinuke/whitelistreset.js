@@ -6,13 +6,13 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`
+                            `<:icon_cross:1345041135156072541> | **Your Server Doesn't Meet My 5 Member Criteria**`
                         )
                 ]
             })
@@ -28,7 +28,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
+                            `<:icon_cross:1345041135156072541> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
                         )
                 ]
             })
@@ -43,7 +43,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
+                    `<:icon_cross:1345041135156072541> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
 
 
 
@@ -62,7 +62,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Seems that antinuke module is not enabled in this server.**`
+                            `<:icon_cross:1345041135156072541> | **Seems that antinuke module is not enabled in this server.**`
                         )
                 ]
             })
@@ -77,7 +77,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | **Please again run this command as the database was earlier not assigned.**`
+                                    `<:icon_cross:1345041135156072541> | **Please again run this command as the database was earlier not assigned.**`
                                 )
                         ]
                     })
@@ -105,7 +105,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:tick:1317818894546898985> | **Successfully reset the whitelisted members list.**`
+                                        `<:tick_icons:1345041197483298856> | **Successfully reset the whitelisted members list.**`
                                     )
                             ]
                         })
@@ -115,7 +115,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:cross:1317733546261217300> | **There are no whitelisted members in this server.**`
+                                        `<:icon_cross:1345041135156072541> | **There are no whitelisted members in this server.**`
                                     )
                             ]
                         })
