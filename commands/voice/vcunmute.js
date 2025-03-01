@@ -76,7 +76,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Successfully UnMuted <@${member.user.id}> From Voice!`
+                            `<:icon_cross:1345041135156072541> | Successfully UnMuted <@${member.user.id}> From Voice!`
                         )
                 ]
             })
