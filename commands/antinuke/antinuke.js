@@ -1,10 +1,10 @@
 const { MessageEmbed } = require('discord.js');
 
 // Emoji constants
-let enable = `<:disable:1318037005493342280><:enable:1318037008500658248>`
-let disable = `<:enable:1318037008500658248><:disable:1318037005493342280>`
-let protect = `<:mod:1318037003086073886>`
-let hii = `<:reddot:1317860462028914700>`;
+let enable = `<:cm_off:1345295117082169354><:cm_on:1345295105309020171>`
+let disable = `<:cm_on:1345295105309020171><:cm_off:1345295117082169354>`
+let protect = `<:Icons_Guardian:1345041202755407984>`
+let hii = `<a:cx_ping:1343921964674449418> `;
 
 module.exports = {
     name: 'antinuke',
@@ -12,12 +12,12 @@ module.exports = {
     category: 'security',
     premium: false,
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
-                        .setDescription(`<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`)
+                        .setDescription(`<:icon_cross:1345041135156072541> | **Your Server Doesn't Meet My 5 Member Criteria**`)
                 ]
             });
         }
@@ -29,7 +29,7 @@ module.exports = {
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
-                        .setDescription(`<:cross:1317733546261217300> | Only Server Owner Or Extraowner Can Run This Command.!`)
+                        .setDescription(`<:icon_cross:1345041135156072541> | Only Server Owner Or Extraowner Can Run This Command.!`)
                 ]
             });
         }
@@ -37,7 +37,7 @@ module.exports = {
         if (!own && !(message?.guild.members.cache.get(client.user.id).roles.highest.position <= message?.member?.roles?.highest.position)) {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
-                .setDescription(`<:cross:1317733546261217300> | Only Server Owner Or Extraowner Can Run This Command.!`);
+                .setDescription(`<:icon_cross:1345041135156072541> | Only Server Owner Or Extraowner Can Run This Command.!`);
             return message.channel.send({ embeds: [higherole] });
         }
 
@@ -128,7 +128,7 @@ module.exports = {
                     embeds: [
                         new MessageEmbed()
                             .setColor(client.color)
-                            .setDescription(`<a:tk:1290911171389423717> | **Initializing Quick Setup!**`)
+                            .setDescription(`<:tick_icons:1345041197483298856> | **Initializing Quick Setup!**`)
                     ]
                 });
                 // Simulate setup
