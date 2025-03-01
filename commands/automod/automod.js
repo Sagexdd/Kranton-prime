@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js')
-let enable = `<:disable:1318037005493342280><:enable:1318037008500658248>`
-let disable = `<:enable:1318037008500658248><:disable:1318037005493342280>`
-let protect = `<:mod:1318037003086073886>`
-let hii = `<:Hii:1220745498621771776>`
+let enable = `<:cm_off:1345295117082169354><:cm_on:1345295105309020171>`
+let disable = `<:cm_on:1345295105309020171><:cm_off:1345295117082169354>`
+let protect = `<:Icons_Guardian:1345041202755407984>`
+let hii = `<a:cx_ping:1343921964674449418>`
 const wait = require('wait')
 
 module.exports = {
@@ -15,13 +15,13 @@ module.exports = {
     run: async (client, message, args) => {
         const embed = new MessageEmbed().setColor(client.color)
 
-     if (message.guild.memberCount < 40) {
+     if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `${client.emoji.cross} | Your Server Doesn't Meet My 40 Member Criteria`
+                            `${client.emoji.cross} | Your Server Doesn't Meet My 5 Member Criteria`
                         )
                 ]
             })
