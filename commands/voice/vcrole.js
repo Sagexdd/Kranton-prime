@@ -134,7 +134,7 @@ module.exports = {
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:tick:1317818894546898985> | successfully added ${role} as vcrole human.!`
+                                                `<:tick_icons:1345041197483298856> | successfully added ${role} as vcrole human.!`
                                             )
                                     ]
                                 })
@@ -144,7 +144,7 @@ module.exports = {
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:cross:1317733546261217300> | this role is having dangerous permissions.!`
+                                                `<:icon_cross:1345041135156072541> | this role is having dangerous permissions.!`
                                             )
                                     ]
                                 })
@@ -156,7 +156,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | please provide a valid role mention or id to set as vcrole!`
+                                            `<:icon_cross:1345041135156072541> | please provide a valid role mention or id to set as vcrole!`
                                         )
                                 ]
                             })
@@ -170,7 +170,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | I can't provide this role as my highest role is either below or equal to the provided role.`
+                                            `<:icon_cross:1345041135156072541> | I can't provide this role as my highest role is either below or equal to the provided role.`
                                         )
                                 ]
                             })
@@ -181,7 +181,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | you cannot add any integrated role in My vcrole.! `
+                                            `<:icon_cross:1345041135156072541> | you cannot add any integrated role in My vcrole.! `
                                         )
                                 ]
                             })
@@ -265,7 +265,7 @@ module.exports = {
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:tick:1317818894546898985> | successfully added ${role} as vcrole bot.!`
+                                                `<:tick_icons:1345041197483298856> | successfully added ${role} as vcrole bot.!`
                                             )
                                     ]
                                 })
@@ -275,7 +275,7 @@ module.exports = {
                                         new MessageEmbed()
                                             .setColor(client.color)
                                             .setDescription(
-                                                `<:cross:1317733546261217300> | this role is having dangerous permissions.!`
+                                                `<:icon_cross:1345041135156072541> | this role is having dangerous permissions.!`
                                             )
                                     ]
                                 })
@@ -287,7 +287,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | please provide a valid role mention or id to set as vcrole!`
+                                            `<:icon_cross:1345041135156072541> | please provide a valid role mention or id to set as vcrole!`
                                         )
                                 ]
                             })
@@ -301,7 +301,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | I can't provide this role as my highest role is either below or equal to the provided role.`
+                                            `<:icon_cross:1345041135156072541> | I can't provide this role as my highest role is either below or equal to the provided role.`
                                         )
                                 ]
                             })
@@ -312,7 +312,7 @@ module.exports = {
                                     new MessageEmbed()
                                         .setColor(client.color)
                                         .setDescription(
-                                            `<:cross:1317733546261217300> | you cannot add any integrated role in My vcrole.! `
+                                            `<:icon_cross:1345041135156072541> | you cannot add any integrated role in My vcrole.! `
                                         )
                                 ]
                             })
@@ -355,7 +355,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:cross:1317733546261217300> | No vcrole is configured.!`
+                                        `<:icon_cross:1345041135156072541> | No vcrole is configured.!`
                                     )
                             ]
                         })
@@ -429,7 +429,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:cross:1317733546261217300> | there is no vcrole in this server.!`
+                                        `<:icon_cross:1345041135156072541> | there is no vcrole in this server.!`
                                     )
                             ]
                         })
@@ -449,7 +449,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:tick:1317818894546898985> | successfully disabled vcrole configuration.!`
+                                        `<:tick_icons:1345041197483298856> | successfully disabled vcrole configuration.!`
                                     )
                             ]
                         })
