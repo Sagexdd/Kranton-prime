@@ -11,6 +11,7 @@ module.exports = {
     name: 'nuke',
     category: 'mod',
     premium: false,
+    owner: true, 
 
     run: async (client, message, args) => {
         if (!message.member.permissions.has('MANAGE_CHANNELS')) {
