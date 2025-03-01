@@ -4,7 +4,7 @@ module.exports = async (client) => {
             await client.user.setPresence({
                 activities: [
                     {
-                        name: `FasterThanMeta-Tachyons..!!`,
+                        name: `Kranton Prime..!!`,
                         type: `LISTENING`,
                     },
                 ],
