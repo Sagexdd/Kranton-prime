@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js')
 const rex = [
-    '1237086498076098762'
+    '1328025198758461440'
 ]
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`
+                            `<:icon_cross:1345041135156072541> | **Your Server Doesn't Meet My 40 Member Criteria**`
                         )
                 ]
             })
@@ -29,7 +29,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Only Server Owner Can Run This Command.!**`
+                            `<:icon_cross:1345041135156072541> | **Only Server Owner Can Run This Command.!**`
                         )
                 ]
             })
@@ -70,7 +70,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **Please Provide a Valid User Mention or ID to Set as Extra Owner!**`
+                                `<:icon_cross:1345041135156072541> | **Please Provide a Valid User Mention or ID to Set as Extra Owner!**`
                             )
                     ]
                 })
@@ -80,7 +80,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **You Cannot Add Any Bots to Extraowner** `
+                                `<:icon_cross:1345041135156072541> | **You Cannot Add Any Bots to Extraowner** `
                             )
                     ]
                 })
@@ -94,7 +94,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **Successfully Added ${user} As Extraowner**`
+                                `<:tick_icons:1345041197483298856> | **Successfully Added ${user} As Extraowner**`
                             )
                     ]
                 })
@@ -107,7 +107,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **There Is No Extraowner Configuration In This Server.!**`
+                                `<:tick_icons:1345041197483298856> | **There Is No Extraowner Configuration In This Server.!**`
                             )
                     ]
                 })
@@ -118,7 +118,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:tick:1317818894546898985> | **Successfully Disabled Extraowner Configuration.!**`
+                                `<:tick_icons:1345041197483298856> | **Successfully Disabled Extraowner Configuration.!**`
                             )
                     ]
                 })
@@ -131,7 +131,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | **No Extraowner is Set.!**`
+                                `<:icon_cross:1345041135156072541> | **No Extraowner is Set.!**`
                             )
                     ]
                 })
