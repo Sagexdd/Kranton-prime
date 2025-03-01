@@ -323,7 +323,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'security')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245605073036378183> Antinuke \`[${_commands.length}]\`**`,
+                    `**<a:antinuke:1345243426878394439>  Antinuke \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -339,7 +339,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'mod')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:icons_mod:1099577525514014761> Moderation \`[${_commands.length}]\`**`,
+                    `**<a:Moderation:1345244176299724822>  Moderation \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -355,7 +355,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'info')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245602736813248522> Utility \`[${_commands.length}]\`**`,
+                    `**<:Icons_utility:1343920506797031507> Utility \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -371,7 +371,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'welcomer')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245605497462325298>  Welcomer \`[${_commands.length}]\`**`,
+                    `**<a:heart2:1343922330702712898>  Welcomer \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -387,7 +387,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'voice')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245602796636471326>  Voice \`[${_commands.length}]\`**`,
+                    `**<:voice:1345245345562497155>  Voice \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -411,7 +411,7 @@ module.exports = class Util {
                         }
                     })
                 embed.addField(
-                    `**<:icons_human:1099575989589250078> Customrole \`[${cmd.length}]\`**`,
+                    `**<:icons_human:1343922201933385749>  Customrole \`[${cmd.length}]\`**`,
                     cmd.sort().join(', ')
                 )
                 await interaction
@@ -426,7 +426,7 @@ module.exports = class Util {
                     .filter((x) => x.category && x.category === 'logging')
                     .map((x) => `\`${x.name}\``)
                 embed.addField(
-                    `**<:stolen_emoji:1245606546759618622> Logging \`[${_commands.length}]\`**`,
+                    `**<:logging:1345246399259873370> Logging \`[${_commands.length}]\`**`,
                     _commands.sort().join(', ')
                 )
                 interaction
@@ -450,7 +450,7 @@ module.exports = class Util {
                         }
                     })
                 embed.addField(
-                    `**<:stolen_emoji:1245603108298424381> Automod \`[${cmd.length}]\`**`,
+                    `**<:Icons_Guardian:1345041202755407984> Automod \`[${cmd.length}]\`**`,
                     cmd.sort().join(', ')
                 )
                 await interaction
@@ -624,11 +624,11 @@ module.exports = class Util {
         const lodash = require('lodash')
         let previousbut = new MessageButton()
             .setCustomId('queueprev')
-            .setEmoji('<:LeftArrow:1218127864650666035>')
+            .setEmoji('<<:m_previous:1345249802480521239>')
             .setStyle('SUCCESS')
         let nextbut = new MessageButton()
             .setCustomId('queuenext')
-            .setEmoji('<:stolen_emoji:1245953922930049127>')
+            .setEmoji('<:next:1345249818636849273>')
             .setStyle('SUCCESS')
         let row = new MessageActionRow().addComponents(previousbut, nextbut)
         const pages = lodash.chunk(description, 10).map((x) => x.join(`\n`))
