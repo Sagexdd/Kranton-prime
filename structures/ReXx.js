@@ -25,26 +25,26 @@ module.exports = class ReXx extends Client {
         this.commands = new Collection()
         this.categories = fs.readdirSync('./commands/')
         this.emoji = {
-            tick: '<:tick:1317818894546898985>',
-            cross: '<:cross:1317733546261217300>',
-            dot: '<:reddot:1317860462028914700>',
-            drax: '<:stolen_emoji:1290697912745066527>',
-            dev: '<:stolen_emoji:1290698015090409473>',
-            qt: '<:stolen_emoji:1290698153892249682>',
-            dil: '<:stolen_emoji:1290697774891012228>',
-            arrow: '<:stolen_emoji:1290698179536224309>'
+            tick: '<:tick_icons:1345041197483298856>',
+            cross: '<:icon_cross:1345041135156072541>',
+            dot: '<a:cx_ping:1343921964674449418> ',
+            drax: '<a:cx_crown:1343921506345816094>',
+            dev: '<a:cx_developer:1343921594166284341>',
+            qt: '<a:Gato_pat2:1345241350731464788>',
+            dil: '<a:heart2:1343922330702712898>',
+            arrow: '<a:U_Seta_Branca:1345051994070585417>'
         }
         this.util = new Utils(this)
         this.Sweeper = new Sweepers(this)
         this.color = `0xFF0000`
-        this.support = `https://discord.gg/natkhat`
+        this.support = `https://discord.gg/hjSV93j93j`
         this.cooldowns = new Collection()
         this.snek = require('axios')
         this.ratelimit = new WebhookClient({
-            url: 'https://discord.com/api/webhooks/1339933986021183561/rXbeY0byhWFdqFSZUHnosoebQwG786cgfpUeM9EGCKxRBIeQ8zS9OZSFgmw-rE1fAbEx'
+            url: 'https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh'
         })
         this.error = new WebhookClient({
-            url: 'https://discord.com/api/webhooks/1339934192037007492/QC_s1G8Eznn5wcAb1SKHmOVyDTdTKTH2epIAiIauQAyVF8hh2ajBU-UqgRDNQkpEZf5u'
+            url: 'https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh'
         })
 
         this.on('error', (error) => {
