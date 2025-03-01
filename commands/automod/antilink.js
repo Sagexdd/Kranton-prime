@@ -1,8 +1,8 @@
 const { MessageEmbed } = require('discord.js')
-let enable = `<:disable:1318037005493342280><:enable:1318037008500658248>`
-let disable = `<:enable:1318037008500658248><:disable:1318037005493342280>`
-let protect = `<:mod:1318037003086073886>`
-let hii = `<:reddot:1317860462028914700>`
+let enable = `<:cm_off:1345295117082169354><:cm_on:1345295105309020171>`
+let disable = `<:cm_on:1345295105309020171><:cm_off:1345295117082169354>`
+let protect = `<:Icons_Guardian:1345041202755407984>`
+let hii = `<a:cx_ping:1343921964674449418> `
 const wait = require('wait')
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<:icon_cross:1345041135156072541> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -32,7 +32,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Administrator\` permissions to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have \`Administrator\` permissions to use this command.`
                         )
                 ]
             })
@@ -43,7 +43,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | I don't have \`Administrator\` permissions to execute this command.`
+                            `<:icon_cross:1345041135156072541> | I don't have \`Administrator\` permissions to execute this command.`
                         )
                 ]
             })
@@ -58,7 +58,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
