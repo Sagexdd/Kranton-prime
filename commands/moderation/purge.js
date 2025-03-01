@@ -12,7 +12,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have \`Manage Messages\` permissions to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have \`Manage Messages\` permissions to use this command.`
                         )
                 ]
             })
@@ -24,7 +24,7 @@ module.exports = {
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:cross:1317733546261217300> | You must provide the number of messages to be deleted.`
+                                `<:icon_cross:1345041135156072541> | You must provide the number of messages to be deleted.`
                             )
                     ]
                 })
@@ -35,7 +35,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | You must provide a valid number of messages to be deleted.`
+                                    `<:icon_cross:1345041135156072541> | You must provide a valid number of messages to be deleted.`
                                 )
                         ]
                     })
@@ -45,7 +45,7 @@ module.exports = {
                             new MessageEmbed()
                                 .setColor(client.color)
                                 .setDescription(
-                                    `<:cross:1317733546261217300> | You can't delete more than **999** messages at a time.`
+                                    `<:icon_cross:1345041135156072541> | You can't delete more than **999** messages at a time.`
                                 )
                         ]
                     })
@@ -58,7 +58,7 @@ module.exports = {
                                 new MessageEmbed()
                                     .setColor(client.color)
                                     .setDescription(
-                                        `<:tick:1317818894546898985> | Successfully deleted ${amount} messages.`
+                                        `<:tick_icons:1345041197483298856> | Successfully deleted ${amount} messages.`
                                     )
                             ]
                         })
