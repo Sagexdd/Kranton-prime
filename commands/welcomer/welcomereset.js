@@ -5,13 +5,13 @@ module.exports = {
     name: 'welcomereset',
     category: 'welcomer',
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<:icon_cross:1345041135156072541> | Your Server Doesn't Meet My 40 Member Criteria`
                         )
                 ]
             })
@@ -36,7 +36,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -59,7 +59,7 @@ module.exports = {
                 new MessageEmbed()
                     .setColor(client.color)
                     .setDescription(
-                        `<:tick:1317818894546898985> | Successfully reset the welcomer module.`
+                        `<:tick_icons:1345041197483298856> | Successfully reset the welcomer module.`
                     )
             ]
         })
