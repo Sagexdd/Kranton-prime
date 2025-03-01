@@ -5,13 +5,13 @@ module.exports = {
     name: 'welcomechannel',
     category: 'welcomer',
     run: async (client, message, args) => {
-        if (message.guild.memberCount < 40) {
+        if (message.guild.memberCount < 5) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:icon_cross:1345041135156072541> | Your Server Doesn't Meet My 40 Member Criteria`
+                            `<:icon_cross:1345041135156072541> | Your Server Doesn't Meet My 5 Member Criteria`
                         )
                 ]
             })
