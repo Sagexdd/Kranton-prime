@@ -42,7 +42,7 @@ module.exports = {
                     embed
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -59,7 +59,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985>| Successfully Unmuted ${i} Members in ${message.member.voice.channel}!`
+                            `<:tick_icons:1345041197483298856> | Successfully Unmuted ${i} Members in ${message.member.voice.channel}!`
                         )
                 ]
             });
