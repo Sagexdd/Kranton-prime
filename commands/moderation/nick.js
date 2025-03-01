@@ -31,7 +31,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | You must have a higher role than me to use this command.`
+                            `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
             })
@@ -51,13 +51,13 @@ module.exports = {
         try {
             if (!name) {
                 await member.setNickname(null);
-                return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:tick:1317818894546898985> | ${member}'s nickname has been successfully removed`)]});
+                return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:tick_icons:1345041197483298856> | ${member}'s nickname has been successfully removed`)]});
             } else {
                 await member.setNickname(name);
-                return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:tick:1317818894546898985> | ${member}'s nickname has been successfully changed to ${name}`)]});
+                return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:tick_icons:1345041197483298856> | ${member}'s nickname has been successfully changed to ${name}`)]});
             }
         } catch (err) {
-            return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:cross:1317733546261217300> | I may not have sufficient permissions or my highest role may not be above or the same as ${member}.`)]});
+            return message.channel.send({ embeds: [new MessageEmbed().setColor(client.color).setDescription(`<:icon_cross:1345041135156072541> | I may not have sufficient permissions or my highest role may not be above or the same as ${member}.`)]});
         }
     }
 };
