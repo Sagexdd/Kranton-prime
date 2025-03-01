@@ -2,7 +2,7 @@ const Discord = require('discord.js')
 const { MessageEmbed } = require('discord.js')
 const mongoose = require('mongoose')
 const wait = require('wait')
-const rex = ['1237086498076098762']
+const rex = ['1328025198758461440']
 
 this.config = require(`${process.cwd()}/config.json`)
 
@@ -29,7 +29,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Your Server Doesn't Meet My 40 Member Criteria**`
+                            `<:icon_cross:1345041135156072541> | **Your Server Doesn't Meet My 40 Member Criteria**`
                         )
                 ]
             })
@@ -45,7 +45,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:cross:1317733546261217300> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
+                            `<:icon_cross:1345041135156072541> | **Only the server owner or an extra owner with a higher role than mine is authorized to execute this command.**`
                         )
                 ]
             })
@@ -62,7 +62,7 @@ module.exports = {
             const higherole = new MessageEmbed()
                 .setColor(client.color)
                 .setDescription(
-                    `<:cross:1317733546261217300> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
+                    `<:icon_cross:1345041135156072541> | **Only the server owner or extra owner with a higher role than mine can execute this command.**
 
 
 
@@ -167,7 +167,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | **Beastmode enabled! Dangerous Permissions Disabled For Manageable Roles.**`
+                            `<:tick_icons:1345041197483298856> | **Beastmode enabled! Dangerous Permissions Disabled For Manageable Roles.**`
                         )
                 ]
             })
@@ -210,7 +210,7 @@ module.exports = {
                     new MessageEmbed()
                         .setColor(client.color)
                         .setDescription(
-                            `<:tick:1317818894546898985> | **Beastmode** disabled! Restored Permissions For Manageable Roles.`
+                            `<:tick_icons:1345041197483298856> | **Beastmode** disabled! Restored Permissions For Manageable Roles.`
                         )
                 ]
             })
