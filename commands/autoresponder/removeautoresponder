@@ -1,0 +1,62 @@
+const { MessageEmbed } = require('discord.js');
+
+module.exports = {
+    name: 'removeautoresponder',
+    category: 'autoresponder',
+    description: 'Remove an existing autoresponder trigger',
+    run: async (client, message, args) => {
+        // Check if the user has necessary permissions
+        if (!message.member.permissions.has('MANAGE_MESSAGES') && message.guild.ownerId !== message.member.id) {
+            return message.channel.send({
+                embeds: [
+                    new MessageEmbed()
+                        .setColor('BLACK')
+                        .setDescription(
+                            `<:icon_cross:1345041135156072541> | You must be the **Guild Owner** or have \`Manage Messages\` permission to use this command.`
+                        ),
+                ],
+            });
+        }
+
+        // Ensure the trigger is provided
+        if (args.length < 1) {
+            return message.channel.send({
+                embeds: [
+                    new MessageEmbed()
+                        .setColor('BLACK')
+                        .setDescription(
+                            `<:icon_cross:1345041135156072541> | Please provide the trigger phrase of the autoresponder you want to remove.`
+                        ),
+                ],
+            });
+        }
+
+        const trigger = args[0].toLowerCase(); // Get the trigger phrase
+
+        // Check if autoresponders exist in memory
+        if (!client.autoresponders || !client.autoresponders[trigger]) {
+            return message.channel.send({
+                embeds: [
+                    new MessageEmbed()
+                        .setColor('BLACK')
+                        .setDescription(
+                            `<:icon_cross:1345041135156072541> | No autoresponder found for the trigger: \`${trigger}\`.`
+                        ),
+                ],
+            });
+        }
+
+        // Delete the trigger from memory
+        delete client.autoresponders[trigger];
+
+        message.channel.send({
+            embeds: [
+                new MessageEmbed()
+                    .setColor('GREEN')
+                    .setDescription(
+                        `<:tick_icons:1345041197483298856> | Successfully removed the autoresponder for \`${trigger}\`.`
+                    ),
+            ],
+        });
+    },
+};
