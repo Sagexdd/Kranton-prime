@@ -1,6 +1,4 @@
 const { MessageEmbed } = require('discord.js');
-const moment = require('moment');
-const os = require('os');
 
 module.exports = {
     name: 'stats',
@@ -9,9 +7,7 @@ module.exports = {
     usage: 'stats',
     run: async (client, message, args) => {
         const uptime = Math.round(Date.now() - client.uptime);
-        const duration1 = Math.round(
-            (Date.now() - message.client.uptime) / 1000
-        )
+        const duration1 = Math.round((Date.now() - message.client.uptime) / 1000);
         let guilds1 = client.guilds.cache.size;
         let member1 = client.guilds.cache.reduce((x, y) => x + y.memberCount, 0);
 
@@ -25,17 +21,19 @@ module.exports = {
 
         const embed1 = new MessageEmbed()
             .setColor(client.color)
-            .setAuthor({
-                name: 'Harm Advance Information'
-            })
+            .setAuthor({ name: 'Kranton Prime Information' })
             .setDescription(
-                `**__General Informations__**\n\n**Bot's Mention** <@!${
-                    client.user.id
-                }>\n**Bot's Version** \`1.0.0\`\n**Total Servers** \`${guilds}\`\n**Total Users** \`${member} (${
-                    client.users.cache.size
-                } Cached)\`\n**Total Channels** \`${
-                    client.channels.cache.size
-                }\`\n**Total Commands** \`${client.commands.size}\`\n**Last Rebooted** <t:${duration1}:R>`
+                `**__General Information__**\n\n` +
+                `**Bot's Mention:** <@!${client.user.id}>\n` +
+                `**Bot's Version:** \`1.0.0\`\n` +
+                `**Total Servers:** \`${guilds}\`\n` +
+                `**Total Users:** \`${member} (${client.users.cache.size} Cached)\`\n` +
+                `**Total Channels:** \`${client.channels.cache.size}\`\n` +
+                `**Total Commands:** \`${client.commands.size}\`\n` +
+                `**Last Rebooted:** <t:${duration1}:R>\n\n` +
+                `**__Bot Owner & Developers__**\n\n` +
+                `<a:cx_crown:1343921506345816094> **Bot Owner:** <@1328025198758461440>\n` +
+                `<a:cx_developer:1343921594166284341> **Developers:** <@1328025198758461440>, `
             )
             .setThumbnail(client.user.displayAvatarURL())
             .setFooter({
