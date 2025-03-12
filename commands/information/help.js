@@ -41,14 +41,14 @@ module.exports = {
             // Set author, thumbnail, and footer
             embed.setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
                 .setThumbnail(client.user.displayAvatarURL({ dynamic: true }))
-                .setFooter('Kranton Prime Is Love', 'https://cdn.discordapp.com/attachments/1345069871351857265/1345317049446039592/8401-white-tree-pfpsgg.gif?ex=67c41ba3&is=67c2ca23&hm=daa0bab10df80e1a4e2a8a76798bd50a0980e12b98f5989339ae028b7aabe92c&');
+                .setFooter('Kranton Prime On Top', 'https://cdn.discordapp.com/attachments/1345069871351857265/1345317049446039592/8401-white-tree-pfpsgg.gif?ex=67c41ba3&is=67c2ca23&hm=daa0bab10df80e1a4e2a8a76798bd50a0980e12b98f5989339ae028b7aabe92c&');
 
             return message.channel.send({ embeds: [embed] });
         }  
         // Create a MessageSelectMenu
         const selectMenu = new MessageSelectMenu()
             .setCustomId('categorySelect')
-            .setPlaceholder('Harm Get Started!')
+            .setPlaceholder('Kranton Prime Get Started!')
             .addOptions([
                 {
                     label: 'AntiNuke',
