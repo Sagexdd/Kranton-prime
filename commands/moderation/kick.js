@@ -1,4 +1,5 @@
-const { Message, Client, MessageEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js');
+
 module.exports = {
     name: 'kick',
     aliases: ['k'],
@@ -14,36 +15,47 @@ module.exports = {
                             `<:icon_cross:1345041135156072541> | You must have \`Kick Members\` permissions to use this command.`
                         )
                 ]
-            })
+            });
         }
-        let isown = message.author.id == message.guild.ownerId
-        let user = await getUserFromMention(message, args[0])
+
+        if (!message.guild.me.permissions.has('KICK_MEMBERS')) {
+            return message.channel.send({
+                embeds: [
+                    new MessageEmbed()
+                        .setColor(client.color)
+                        .setDescription(
+                            `<:icon_cross:1345041135156072541> | I don't have permission to kick members.`
+                        )
+                ]
+            });
+        }
+
+        let isOwner = message.author.id === message.guild.ownerId;
+        let user = await getUserFromMention(message, args[0]);
+
         if (!user) {
             try {
-                user = await message.guild.members.fetch(args[0])
+                user = await message.guild.members.fetch(args[0]);
             } catch (error) {
                 return message.channel.send({
                     embeds: [
                         new MessageEmbed()
                             .setColor(client.color)
                             .setDescription(
-                                `<:icon_cross:1345041135156072541>> | Please Provide Valid user ID or Mention Member.`
+                                `<:icon_cross:1345041135156072541>> | Please provide a valid user ID or mention a member.`
                             )
                     ]
-                })
+                });
             }
         }
-        let rea = args.slice(1).join(' ') || 'No Reason Provided'
-        rea = `${message.author.tag} (${message.author.id}) | ` + rea
-        const kaalo = new MessageEmbed()
-            .setDescription(`${client.emoji.cross} | User Not Found`)
-            .setColor(client.color)
-        const teddy = new MessageEmbed()
-            .setDescription(`${client.emoji.cross} | Mention the user first`)
-            .setColor(client.color)
-        if (!user) return message.channel.send({ embeds: [teddy] })
-        if (user === undefined)
-            return message.channel.send({ embeds: [kaalo] })
+
+        if (!user) return message.channel.send({
+            embeds: [
+                new MessageEmbed()
+                    .setColor(client.color)
+                    .setDescription(`${client.emoji.cross} | Mention the user first`)
+            ]
+        });
 
         if (user.id === client.user.id)
             return message.channel.send({
@@ -54,7 +66,7 @@ module.exports = {
                             `<:icon_cross:1345041135156072541> | You can't kick me.`
                         )
                 ]
-            })
+            });
 
         if (user.id === message.guild.ownerId)
             return message.channel.send({
@@ -65,8 +77,15 @@ module.exports = {
                             `<:icon_cross:1345041135156072541> | I can't kick the owner of this server.`
                         )
                 ]
-            })
-        if (!client.util.hasHigher(message.member) && !isown) {
+            });
+
+        // Debugging role positions
+        console.log(`Executor Role Position: ${message.member.roles.highest.position}`);
+        console.log(`Bot Role Position: ${message.guild.me.roles.highest.position}`);
+        console.log(`Target Role Position: ${user.roles.highest.position}`);
+
+        // Allow server owner and admins to bypass role check
+        if (!isOwner && !message.member.permissions.has("ADMINISTRATOR") && message.member.roles.highest.position <= message.guild.me.roles.highest.position) {
             return message.channel.send({
                 embeds: [
                     new MessageEmbed()
@@ -75,46 +94,49 @@ module.exports = {
                             `<:icon_cross:1345041135156072541> | You must have a higher role than me to use this command.`
                         )
                 ]
-            })
+            });
         }
 
-        if (!user.kickable) {
-            const embed = new MessageEmbed()
-                .setDescription(
-                    `<:icon_cross:1345041135156072541> |  My highest role is below **<@${user.id}>** `
-                )
-                .setColor(client.color)
-            return message.channel.send({ embeds: [embed] })
+        if (user.roles.highest.position >= message.guild.me.roles.highest.position) {
+            return message.channel.send({
+                embeds: [
+                    new MessageEmbed()
+                        .setColor(client.color)
+                        .setDescription(
+                            `<:icon_cross:1345041135156072541> | My highest role must be above **${user.user.tag}** to kick them.`
+                        )
+                ]
+            });
         }
-        const banmess = new MessageEmbed()
-            .setAuthor(
-                message.author.tag,
-                message.author.displayAvatarURL({ dynamic: true })
-            )
+
+        let reason = args.slice(1).join(' ') || 'No Reason Provided';
+        reason = `${message.author.tag} (${message.author.id}) | ` + reason;
+
+        const notifyEmbed = new MessageEmbed()
+            .setAuthor(message.author.tag, message.author.displayAvatarURL({ dynamic: true }))
             .setDescription(
-                `You Have Been kicked From ${message.guild.name} \nExecutor : ${message.author.tag} \nReason : \`${rea}\``
+                `You have been kicked from **${message.guild.name}**.\n**Executor:** ${message.author.tag}\n**Reason:** \`${reason}\``
             )
             .setColor(client.color)
-            .setThumbnail(message.author.displayAvatarURL({ dynamic: true }))
+            .setThumbnail(message.author.displayAvatarURL({ dynamic: true }));
 
-        await message.guild.members.kick(user.id, rea).catch((err) => null)
-        await user.send({ embeds: [banmess] }).catch((err) => null)
+        await user.send({ embeds: [notifyEmbed] }).catch(() => null);
+        await message.guild.members.kick(user.id, reason).catch(() => null);
 
-        const done = new MessageEmbed()
+        const successEmbed = new MessageEmbed()
             .setDescription(
                 `<:tick_icons:1345041197483298856> | Successfully kicked **${user.user.tag}** from the server.`
             )
-            .setColor(client.color)
-        return message.channel.send({ embeds: [done] })
+            .setColor(client.color);
+
+        return message.channel.send({ embeds: [successEmbed] });
     }
-}
+};
 
 function getUserFromMention(message, mention) {
-    if (!mention) return null
-
-    const matches = mention.match(/^<@!?(\d+)>$/)
-    if (!matches) return null
-
-    const id = matches[1]
-    return message.guild.members.fetch(id)
+    if (!mention) return null;
+    const matches = mention.match(/^<@!?(\d+)>$/);
+    if (!matches) return null;
+    const id = matches[1];
+    return message.guild.members.fetch(id);
 }
